@@ -24,7 +24,6 @@ filename = wget.download(url)
 def index(currentLocation,range,limit):
     R = 6373.0
     result = []
-    totale_risultati = 0
     with open(filename) as json_file:
         data = json.load(json_file)
         for p in data['features']:
